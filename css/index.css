@@ -1,0 +1,641 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.stickyTop {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stickyTop .topHeader {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stickyTop .topHeader .inputLeft {
+  display: flex;
+  padding: 0px 10px;
+  background: #f2f2f2;
+  height: 38px;
+  align-items: center;
+}
+.stickyTop .topHeader .inputLeft input {
+  border: none;
+  background: transparent;
+  margin-left: 5px;
+}
+.stickyTop .topHeader .iconShopping {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stickyTop .headerWrap {
+  padding: 0 10px;
+}
+.stickyTop .headerWrap .headerWrapItem {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stickyTop .headerWrap .headerWrapItem a {
+  text-decoration: none;
+  color: black;
+}
+
+.showInfo {
+  padding: 10px;
+  background-color: rgb(255, 231, 212);
+  padding-bottom: 30px;
+}
+.showInfo p {
+  margin-bottom: 0;
+}
+.showInfo .showInfoTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.showInfo .showInfoTop .warning {
+  background-color: rgb(243, 51, 58);
+  padding: 5px 10px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 10px;
+  -webkit-animation: flash linear 1s infinite;
+          animation: flash linear 1s infinite;
+}
+.showInfo .showInfoTop .liveEye {
+  width: 20px;
+}
+.showInfo .showInfoTop .whoWatched {
+  margin-left: 5px;
+}
+.showInfo .showInfoMiddle {
+  margin-top: 15px;
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+}
+.showInfo .showInfoMiddle .btnRed {
+  background-color: rgb(190, 4, 11);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  width: 80%;
+  font-size: 17px;
+  color: white;
+  padding: 5px 15px;
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.6;
+}
+.showInfo .showInfoMiddle .btnLineRed {
+  border-radius: 10px;
+  border: 2px solid rgb(204, 34, 25);
+  position: absolute;
+  padding: 5px;
+  left: 50%;
+  width: 75%;
+  top: 80%;
+  background: white;
+  transform: translateX(-50%);
+}
+.showInfo .showInfoMiddle .btnLineRed button {
+  border: none;
+  background-color: transparent;
+  border: 2px solid rgb(204, 34, 25);
+  border-radius: 10px;
+  color: rgb(204, 34, 25);
+  width: 99%;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.policy {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.policy .card {
+  margin: 0 10px;
+  position: relative;
+  border: 2px solid rgb(204, 34, 25);
+  width: 30%;
+}
+.policy .card .cardIcon {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(255, 226, 199);
+  border-radius: 50%;
+  top: -25px;
+}
+.policy .card .card-body {
+  padding: 20px 10px 5px 10px;
+  text-align: center;
+}
+.policy .card .card-body h5 {
+  font-size: 14px;
+  font-weight: 700;
+}
+.policy .card .card-body p {
+  font-size: 12px;
+}
+
+.productDetail {
+  padding-top: 15px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: rgb(255, 226, 199);
+}
+.productDetail .productDetailTitle h4 {
+  color: rgb(204, 34, 25);
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+}
+.productDetail .productDetailContent {
+  padding: 10px 20px;
+}
+.productDetail .productDetailContent .productDetailImage img {
+  width: 100%;
+  height: 100%;
+}
+.productDetail .productDetailContent .productDetailInfo {
+  display: flex;
+  padding-top: 10px;
+  border-top: 1px solid black;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0 10px;
+}
+.productDetail .productDetailContent .productDetailInfo ul {
+  text-align: left;
+  list-style: none;
+}
+.productDetail .productDetailContent .productDetailInfo ul li {
+  margin-bottom: 10px;
+}
+.productDetail .productDetailContent .productDetailInfo .productDetailTitle {
+  font-weight: 600;
+}
+.productDetail .productDetailContent .productDetailInfo .productDetailSize {
+  color: rgb(203, 1, 1);
+  font-weight: 600;
+}
+
+.showWearing .showWearingContent {
+  position: relative;
+}
+.showWearing .showWearingContent .showWearingImg {
+  padding: 20px 30px;
+}
+.showWearing .showWearingContent .showWearingImg img {
+  width: 100%;
+  height: 100%;
+}
+.showWearing .showWearingContent button {
+  margin: 15px 0;
+  padding: 5px 55px;
+  border: none;
+  background: rgb(255, 122, 127);
+  width: 50%;
+  color: white;
+  border-radius: 46px;
+  text-align: center;
+}
+.showWearing .showWearingContent .layout {
+  position: absolute;
+  background: rgb(255, 231, 212);
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  height: 40%;
+  z-index: -1;
+}
+
+.homeCategory {
+  padding: 30px 10px 0 10px;
+}
+.homeCategory h5 {
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.homeCategory .swiper-grid {
+  padding-bottom: 30px;
+}
+
+.topSearch {
+  padding: 0px 10px;
+  padding-bottom: 100px;
+}
+.topSearch .topSearchTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.topSearch .topSearchContent .topSearchInfo {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #fff;
+  font-weight: 400;
+}
+.topSearch .topSearchContent .topSearchInfo .topSearchPrice .price {
+  color: #ff2c00;
+  font-size: 16px;
+  font-weight: 600;
+}
+.topSearch .topSearchContent .topSearchInfo .topSearchPrice .currency {
+  font-size: 9px;
+  font-weight: 600;
+  color: #ff2c00;
+}
+.topSearch .topSearchContent .topSearchInfo .topSearchDescrip a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+.topSearch .topSearchContent .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.discount {
+  padding: 0px 10px;
+  padding-bottom: 50px;
+}
+.discount .discountTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.discount .discountBanner {
+  margin-top: 15px;
+}
+.discount .discountBanner img {
+  width: 100%;
+}
+
+.newProduct {
+  padding: 15px 10px;
+  padding-bottom: 50px;
+}
+.newProduct .newProductTitle {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.newProduct .newProductContent .newProductInfo {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #fff;
+  font-weight: 400;
+}
+.newProduct .newProductContent .newProductInfo .newProductPrice .price {
+  color: #ff2c00;
+  font-size: 16px;
+  font-weight: 600;
+}
+.newProduct .newProductContent .newProductInfo .newProductPrice .currency {
+  font-size: 9px;
+  font-weight: 600;
+  color: #ff2c00;
+}
+.newProduct .newProductContent .newProductInfo .newProductDescrip a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  display: block;
+}
+.newProduct .newProductContent .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.formInfo {
+  background-image: url("./../images/backgroundForm.jpeg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  height: 500px;
+  background-attachment: scroll;
+  background-position: center top;
+  background-repeat: repeat;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.formInfo form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+}
+.formInfo form .messageError {
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  background: red;
+  display: none;
+  justify-content: center;
+  color: white;
+}
+.formInfo form .messageSuccess {
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  background: green;
+  display: none;
+  justify-content: center;
+  color: white;
+}
+.formInfo form .checkboxGroup {
+  width: 100%;
+}
+.formInfo form .checkboxGroup ul {
+  list-style: none;
+  display: flex;
+}
+.formInfo form .checkboxGroup ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 15px;
+}
+.formInfo form .checkboxGroup ul li input {
+  margin-bottom: 0;
+  margin-right: 5px;
+}
+.formInfo form input {
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.formInfo form textarea {
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 100px;
+}
+.formInfo form button {
+  background: rgb(204, 34, 25);
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 50px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 46px;
+  width: 100%;
+}
+
+.trend {
+  padding: 0px 10px;
+  padding-bottom: 100px;
+}
+.trend .trendTitle {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.trend .trendContent .trendInfo {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #fff;
+  font-weight: 400;
+}
+.trend .trendContent .trendInfo .trendPrice .price {
+  color: #ff2c00;
+  font-size: 16px;
+  font-weight: 600;
+}
+.trend .trendContent .trendInfo .trendPrice .currency {
+  font-size: 9px;
+  font-weight: 600;
+  color: #ff2c00;
+}
+.trend .trendContent .trendInfo .trendDescrip a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+.trend .trendContent .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.information {
+  padding: 0px 10px;
+  padding-bottom: 20px;
+}
+.information .informationTitle {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.information .informationContent .contentItem {
+  position: relative;
+}
+.information .informationContent .contentItem .bannerItem {
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+.information .informationContent .contentItem .bannerItem img {
+  width: 100%;
+  height: 100%;
+}
+.information .informationContent .contentItem .informationText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.2196078431);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+.information .informationContent .contentItem .informationText .newsPostTitle {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  min-height: unset !important;
+}
+.information .informationContent .contentItem .informationText .newsPostTime {
+  font-size: 14px;
+  padding-top: 5px;
+  font-weight: 300;
+  line-height: 17px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.interested {
+  padding: 0px 10px;
+  padding-bottom: 100px;
+}
+.interested .interestedTitle {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.interested .interestedContent {
+  margin-bottom: 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+.interested .interestedContent .col-6 {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.interested .interestedContent .interestedImage img {
+  width: 100%;
+  height: 100%;
+}
+.interested .interestedContent .interestedInfo {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #fff;
+  font-weight: 400;
+}
+.interested .interestedContent .interestedInfo .interestedPrice .price {
+  color: #ff2c00;
+  font-size: 16px;
+  font-weight: 600;
+}
+.interested .interestedContent .interestedInfo .interestedPrice .currency {
+  font-size: 9px;
+  font-weight: 600;
+  color: #ff2c00;
+}
+.interested .interestedContent .interestedInfo .interestedDescrip a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  display: block;
+}
+
+footer .dropdownItem .card-header {
+  border-bottom: none;
+  background: #f2f2f2;
+}
+footer .dropdownItem .card-header button {
+  padding-left: 0;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+footer .dropdownItem .card-header button:focus {
+  text-decoration: none;
+}
+footer .dropdownItem .card-body {
+  background: #f2f2f2;
+  padding-top: 10px;
+}
+footer .dropdownItem .card-body ul {
+  list-style: none;
+}
+footer .dropdownItem .card-body ul li {
+  margin-top: 10px;
+  font-size: 14px;
+}
+footer .dropdownItem .card-body ul li a {
+  text-decoration: none;
+  color: black;
+}
+footer .followUs {
+  padding: 1.25rem;
+  margin-bottom: 60px;
+  background: #f2f2f2;
+  border-bottom: 1px solid #dee2e6;
+}
+footer .followUs .followUsTitle {
+  margin-bottom: 15px;
+}
+footer .dowloadApp {
+  padding: 10px 1.25rem;
+  background: #f2f2f2;
+  border-bottom: 1px solid #dee2e6;
+}
+footer .dowloadApp .dowloadAppTitle {
+  margin-bottom: 15px;
+}
+
+.navigationFooter {
+  background: white;
+  height: 60px;
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0px;
+  z-index: 5;
+}
+.navigationFooter .navigationItem {
+  cursor: pointer;
+  width: 80px;
+  font-size: 14px;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+.navigationFooter .navigationItem span {
+  margin-top: 5px;
+  font-size: 11px;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=index.css.map */
