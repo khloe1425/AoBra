@@ -73,8 +73,7 @@ body {
   color: white;
   font-weight: 600;
   font-size: 10px;
-  -webkit-animation: flash linear 1s infinite;
-          animation: flash linear 1s infinite;
+  animation: flash linear 1s infinite;
 }
 .showInfo .showInfoTop .liveEye {
   width: 20px;
@@ -334,12 +333,11 @@ body {
   align-items: center;
   flex-direction: column;
   background-size: cover;
-  height: 500px;
+  height: auto;
   background-attachment: scroll;
   background-position: center top;
   background-repeat: repeat;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 30px 10px;
 }
 .formInfo form {
   display: flex;
@@ -368,20 +366,25 @@ body {
 }
 .formInfo form .checkboxGroup {
   width: 100%;
+  background-color: #fff;
+  border-radius: 6px;
+  margin-bottom: 15px;
 }
 .formInfo form .checkboxGroup ul {
   list-style: none;
-  display: flex;
 }
 .formInfo form .checkboxGroup ul li {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-right: 15px;
+  padding: 10px;
 }
 .formInfo form .checkboxGroup ul li input {
   margin-bottom: 0;
   margin-right: 5px;
+}
+.formInfo form .checkboxGroup ul li span {
+  margin-right: 10px;
 }
 .formInfo form input {
   border: 1px solid #fff;
@@ -389,6 +392,13 @@ body {
   border-radius: 6px;
   margin-bottom: 15px;
   width: 100%;
+}
+.formInfo form input[type=checkbox], .formInfo form input[type=number] {
+  width: auto;
+  border: 1px solid #333;
+}
+.formInfo form input[type=number] {
+  width: 30%;
 }
 .formInfo form textarea {
   border: 1px solid #fff;
@@ -614,18 +624,6 @@ footer .dowloadApp .dowloadAppTitle {
 .navigationFooter .navigationItem span {
   margin-top: 5px;
   font-size: 11px;
-}
-
-@-webkit-keyframes flash {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @keyframes flash {
